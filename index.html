@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendora</title>
+    <link rel="stylesheet" href="home-styles.css">
+   <link rel="icon" href="./images/apple.png" type="image/png">
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛍️</span>
+                <span class="brand-text">Trendora</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Deals</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Products</h1>
+                <p>Discover our amazing collection of premium products</p>
+            </div>
+
+            <div class="filter-section">
+                <select class="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+
+            <div class="loading" id="loading">Loading products...</div>
+            <div class="error" id="error" style="display: none;">
+                Failed to load products. Please try again.
+            </div>
+
+            <div class="products-grid" id="products-grid">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TrendOne</h3>
+                    <p>Your one-stop shop for all premium products. Quality and style guaranteed.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>➤</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TrendOne. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home-script.js"></script>
+</body>
+</html>

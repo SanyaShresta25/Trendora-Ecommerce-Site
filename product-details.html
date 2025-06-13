@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Trendora</title>
+    <link rel="stylesheet" href="details-styles.css">
+ <link rel="icon" href="./images/apple.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛍️</span>
+                <span class="brand-text">Trendora</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Deals</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span id="breadcrumb-category">Products</span>
+                <span>›</span>
+                <span id="breadcrumb-title">Product Details</span>
+            </div>
+
+            <div class="loading" id="loading">Loading product details...</div>
+            <div class="error" id="error" style="display: none;">
+                Failed to load product. <button onclick="location.reload()">Try Again</button>
+            </div>
+
+            <div class="product-details" id="product-details" style="display: none;">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="" alt="">
+                    </div>
+                    <div class="thumbnail-images" id="thumbnail-images">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-header">
+                        <span class="product-category" id="product-category"></span>
+                        <h1 class="product-title" id="product-title"></h1>
+                        <div class="product-rating">
+                            <span class="stars" id="product-stars"></span>
+                            <span class="rating-text" id="product-rating-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="product-pricing">
+                        <div class="price-info">
+                            <span class="current-price" id="current-price"></span>
+                            <span class="discount-badge" id="discount-badge" style="display: none;"></span>
+                        </div>
+                        <div class="stock-info">
+                            <span class="stock-status" id="stock-status"></span>
+                            <span class="stock-count" id="stock-count"></span>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p id="product-description-text"></p>
+                    </div>
+
+               
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-reviews" id="product-reviews" style="display: none;">
+                <h3>Customer Reviews</h3>
+                <div class="reviews-container" id="reviews-container">
+                </div>
+            </div>
+
+            <div class="back-to-products">
+                <a href="index.html" class="back-btn">← Back to Products</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TrendOne</h3>
+                    <p>Your one-stop shop for all premium products. Quality and style guaranteed.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                   
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>➤</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TrendOne. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="details-script.js"></script>
+</body>
+</html>
