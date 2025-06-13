@@ -6,8 +6,8 @@ This project is a dynamic and responsive **product listing web app** built using
 
 ## 🔗 Live Preview
 
-* 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Product-Pulse)
-* 🌐 **Live Site URL**: [View it in action](https://product-pulse.vercel.app/)
+* 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Trendora-Ecommerce-Site)
+* 🌐 **Live Site URL**: [View it in action](https://trendora-ecommerce-site.vercel.app/)
 
 ---
 
